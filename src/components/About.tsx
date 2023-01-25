@@ -35,7 +35,7 @@ const About = (props: Props) => {
           transition={{
             duration: 1.2,
           }}
-          className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
+          className="-mb-20 md:mb-0 flex-shrink-0 w-32 h-32 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
         />
         <div className="space-y-10 px-0 md:px-10">
           <h4 className="text-4xl font-semibold">

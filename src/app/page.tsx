@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import WorkExperience from "@/components/WorkExperience";
 import { Inter } from "@next/font/google";
 import { NextPage } from "next";
 
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
 
       <About />
 
-      {/* Experience section */}
+      <WorkExperience />
 
       {/* Skills section */}
 

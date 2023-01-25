@@ -4,7 +4,6 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import me from "@/assets/imgs/me.jpg";
-import Link from "next/link";
 
 type Props = {};
 
@@ -41,21 +40,21 @@ const Hero = (props: Props) => {
             <Cursor cursorColor="#F7AB0A" />
           </h1>
           <div className="pt-5">
-            <Link href="#about">
+            <a href="#about">
               <button className="heroButton">About</button>
-            </Link>
-            <Link href="#experience">
+            </a>
+            <a href="#experience">
               <button className="heroButton">Experience</button>
-            </Link>
-            <Link href="#skills">
+            </a>
+            <a href="#skills">
               <button className="heroButton">Skills</button>
-            </Link>
-            <Link href="#projects">
+            </a>
+            <a href="#projects">
               <button className="heroButton">Projects</button>
-            </Link>
-            <Link href="#services">
+            </a>
+            <a href="#services">
               <button className="heroButton">Services</button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
