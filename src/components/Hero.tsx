@@ -2,7 +2,6 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import me from "@/assets/imgs/me.jpg";
 import Link from "next/link";
@@ -25,21 +24,8 @@ const Hero = (props: Props) => {
   });
 
   return (
-    <section id="hero" className="snap-center">
-      <motion.div
-        className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          scale: [1, 2, 2, 3, 1],
-          opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1.0],
-          borderRadius: ["20%", "20%", "50%", "80%", "20%"],
-        }}
-        transition={{
-          duration: 2.5,
-        }}
-      >
+    <section id="hero" className="snap-start">
+      <div className="h-screen flex flex-col space-y-0 items-center justify-center text-center overflow-hidden">
         <BackgroundCircles />
         <Image
           src={me}
@@ -47,7 +33,7 @@ const Hero = (props: Props) => {
           className="relative rounded-full h-32 w-32 mx-auto object-cover"
         />
         <div className="z-20">
-          <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+          <h2 className="text-sm uppercase text-gray-500 p-2 tracking-[15px]">
             QA Freelancer
           </h2>
           <h1 className="text-5xl lg:text-6xl font-semibold px-10">
@@ -55,24 +41,24 @@ const Hero = (props: Props) => {
             <Cursor cursorColor="#F7AB0A" />
           </h1>
           <div className="pt-5">
-            <Link href={"#about"}>
+            <Link href="#about">
               <button className="heroButton">About</button>
             </Link>
-            <Link href={"#experience"}>
+            <Link href="#experience">
               <button className="heroButton">Experience</button>
             </Link>
-            <Link href={"#skills"}>
+            <Link href="#skills">
               <button className="heroButton">Skills</button>
             </Link>
-            <Link href={"#projects"}>
+            <Link href="#projects">
               <button className="heroButton">Projects</button>
             </Link>
-            <Link href={"#services"}>
+            <Link href="#services">
               <button className="heroButton">Services</button>
             </Link>
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

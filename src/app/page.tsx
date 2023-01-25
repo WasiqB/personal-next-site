@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Inter } from "@next/font/google";
@@ -7,12 +8,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 const Home: NextPage = () => {
   return (
-    <main className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <main className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory  overflow-scroll z-0">
       <Header />
 
       <Hero />
 
-      {/* About section */}
+      <About />
 
       {/* Experience section */}
 

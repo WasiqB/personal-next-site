@@ -26,21 +26,25 @@ const Header = (props: Props) => {
       >
         <SocialIcon
           url="https://github.com/WasiqB"
+          target="_blank"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://www.linkedin.com/in/wasiqbhamla/"
+          target="_blank"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://twitter.com/WasiqBhamla"
+          target="_blank"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://www.youtube.com/@WasiqBhamla"
+          target="_blank"
           fgColor="gray"
           bgColor="transparent"
         />
