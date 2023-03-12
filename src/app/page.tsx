@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
 import { Inter } from "@next/font/google";
@@ -21,7 +22,7 @@ const Home: NextPage = () => {
 
       <Skills />
 
-      {/* Projects section */}
+      <Projects />
 
       {/* Services section */}
 
